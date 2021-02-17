@@ -1,33 +1,66 @@
 
+
+
 ## The Landry Enterprise Specification
+
+
 
 This project is coming out of a glaring need that, despite the efforts of the creators of tools and platforms, I have yet to find a platform that, in my opinion, is a general platform for solving the majority of problems facing businesses, IE, being enterprise ready. This specification uses the following principles.
 
+
+
 * Provide out-of-the-box solutions to common recurring engineering challenges
+
 * Leverage open source libraries whenever possible
-* Follow best practices and update the specficitation as needed to implement the most common standards and practices
+
+* Follow best practices and update the specification as needed to implement the most common standards and practices
+
 * Use interfaces and plugin architecture to facilitate swapping out modules and implementations for special use cases
+
 * Keep things as simple as possible
 
- To me, an enterprise platform implements the following points in the following method
+
+
+To me, an enterprise platform implements the following points in the following method
+
+
 
 Software Layer
-* Authorization, and Authentication
-* Dependency management
-* Scripting for initialization and running
-* Support for reading and storing and configuring Environmental variables. See The Landry Environment Variable Specification (LEVS)
-*
-*
-*
 
+ * Authorization, and Authentication
+
+ * Navigation and Routing, if applicable
+
+ * Support for reading and storing and configuring Environmental variables. See The Landry Environment Variable Specification (LEVS)
+
+ * Out of the box support for Material Design, an opensource set of guidelines for layouts and UI/UX, so that efforts go towards solving problems over reinventing look and feel.
+
+ * Declaritive approach to forms
+
+
+	 * Ideally, the user facing application should be able to read metadata regarding an entity from a CRUD service backing it (EG swagger, openAPI) and automatically render a form without engineering interference.
+	 *
+
+ * Back end applications: CRUD applications Should be generated via a declarative approach eg swaggerhub.
 
 * container ready
+
 * cloud / infra ready
 
+
+
 * Mindful of developmental processes
+
 * In a means that is 'easy'. No special setup and environmental configuration.
+
 * Developer setup is completely automated. The developer only needs to run simple scripts to initialize and start the application.
+
 * Hot reloading, instant feedback for changes
+
+* Dependency management
+
+* Scripting for initialization and running
+
 
 
 
@@ -44,196 +77,371 @@ todo turn this into a website
 
 
 
+
+
 <!--
 
+
+
 ***
+
 *** To avoid retyping too much info. Do a search and replace for the following:
+
 *** github_username, repo_name, twitter_handle, email, project_title, project_description
+
 -->
+
+
 
 
 
 <!-- PROJECT SHIELDS -->
+
 <!--
+
 *** I'm using markdown "reference style" links for readability.
+
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+
 *** See the bottom of this document for the declaration of the reference variables
+
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
+
 -->
+
 <!-- [![Contributors][contributors-shield]][contributors-url]
+
 [![Forks][forks-shield]][forks-url]
+
 [![Stargazers][stars-shield]][stars-url]
+
 [![Issues][issues-shield]][issues-url]
+
 [![MIT License][license-shield]][license-url]
+
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 
+
+
 <!-- PROJECT LOGO -->
+
 <!-- <br />
+
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">project_title</h3>
+<a href="https://github.com/github_username/repo_name">
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
+<img src="images/logo.png" alt="Logo" width="80" height="80">
+
+</a>
+
+
+
+<h3 align="center">project_title</h3>
+
+
+
+<p align="center">
+
+project_description
+
+<br />
+
+<a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+
+<br />
+
+<br />
+
+<a href="https://github.com/github_username/repo_name">View Demo</a>
+
+·
+
+<a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+
+·
+
+<a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+
 </p>
- -->
+
+</p>
+
+-->
+
+
 
 
 <!-- TABLE OF CONTENTS -->
+
 <!-- <details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
+
+<summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+
+<ol>
+
+<li>
+
+<a href="#about-the-project">About The Project</a>
+
+<ul>
+
+<li><a href="#built-with">Built With</a></li>
+
+</ul>
+
+</li>
+
+<li>
+
+<a href="#getting-started">Getting Started</a>
+
+<ul>
+
+<li><a href="#prerequisites">Prerequisites</a></li>
+
+<li><a href="#installation">Installation</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="#usage">Usage</a></li>
+
+<li><a href="#roadmap">Roadmap</a></li>
+
+<li><a href="#contributing">Contributing</a></li>
+
+<li><a href="#license">License</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+
+</ol>
+
 </details> -->
 
 
 
+
+
 <!-- ABOUT THE PROJECT -->
+
 <!-- ## About The Project
+
+
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+
+
 Here's a blank template to get started:
+
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+
 `github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+
+
 
 
 ### Built With
 
+
+
 * []()
+
 * []()
+
 * []()
+
+
 
 
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
+
+
 
 To get a local copy up and running follow these simple steps.
 
+
+
 ### Prerequisites
 
+
+
 This is an example of how to list things you need to use the software and how to install them.
+
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
+```sh
+
+npm install npm@latest -g
+
+```
+
+
 
 ### Installation
 
+
+
 1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
+
+```sh
+
+git clone https://github.com/github_username/repo_name.git
+
+```
+
 2. Install NPM packages
-   ```sh
-   npm install
-   ```
+
+```sh
+
+npm install
+
+```
+
+
 
 
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
+
+
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
+
+
 _For more examples, please refer to the [Documentation](https://example.com)_
 
- -->
+
+
+-->
+
+
 
 <!-- ROADMAP -->
+
 <!-- ## Roadmap
+
+
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues). -->
 
 
 
+
+
 <!-- CONTRIBUTING -->
+
 <!-- ## Contributing
+
+
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+
+
 1. Fork the Project
+
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
+
 5. Open a Pull Request
 
- -->
+
+
+-->
+
+
 
 <!-- LICENSE -->
+
 <!-- ## License
+
+
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
- -->
+
+
+-->
+
+
 
 <!-- CONTACT -->
+
 <!-- ## Contact
+
+
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
+
+
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
- -->
+
+-->
+
+
 
 
 <!-- ACKNOWLEDGEMENTS -->
+
 <!-- ## Acknowledgements
 
+
+
 * []()
+
 * []()
+
 * []() -->
 
 
 
 
 
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
+
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 <!-- [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
+
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
+
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
+
 [forks-url]: https://github.com/github_username/repo/network/members
+
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
+
 [stars-url]: https://github.com/github_username/repo/stargazers
+
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
+
 [issues-url]: https://github.com/github_username/repo/issues
+
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
+
 [license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
 [linkedin-url]: https://linkedin.com/in/github_username -->
