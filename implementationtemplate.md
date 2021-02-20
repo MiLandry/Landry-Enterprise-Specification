@@ -24,6 +24,7 @@ Navigation and Routing
     dashboard
     search tools
     feed
+Community Component library
 Environment variables
 UI UX
 CRUD Support
