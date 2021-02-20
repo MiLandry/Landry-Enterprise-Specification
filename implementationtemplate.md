@@ -14,8 +14,6 @@
 
 ## Implementation status
 
-  ## Implementation status
-
 Authorization
 Authentication
 Navigation and Routing
