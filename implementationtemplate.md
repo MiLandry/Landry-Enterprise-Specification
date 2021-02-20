@@ -25,16 +25,26 @@ Navigation and Routing
     search tools
     feed
 Community Component library
+State Management
+COde Scaffolding
 Environment variables
 UI UX
 CRUD Support
- Declarative forms
+Declarative forms
 Search and Query
 Workflow engine Support
+RESTFUL API Clients
+Search and Query functionaliyt
+Workflows and Finite state machines
+Database Driver
 Container ready
 Cloud Ready
-scripted development builds, starts, and debugging
+scripted initializations, builds, starts, and debugging
 hot reloading
 dependency management
+Linting
+Code revision, Git
+Testing
+  Mocking
 
 
