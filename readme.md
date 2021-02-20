@@ -1,22 +1,12 @@
 
 
-
-
-
-
-
 ## The Landry Enterprise Specification
 
 
 
 
 
-
-
-This project is coming out of a glaring need that, despite the efforts of the creators of tools and platforms, I have yet to find a platform that, in my opinion, is a general platform for solving the majority of problems facing businesses, IE, being enterprise ready. This specification uses the following principles.
-
-
-
+This project is coming out of a glaring need that, despite the efforts of the creators of tools and platforms, I have yet to find a platform that, in my opinion, is a general platform for solving the majority of problems facing businesses, IE, being enterprise ready.## Principles
 
 
 
@@ -25,11 +15,7 @@ This project is coming out of a glaring need that, despite the efforts of the cr
 
 
 
-
-
 * Leverage open source libraries whenever possible
-
-
 
 
 
@@ -37,19 +23,11 @@ This project is coming out of a glaring need that, despite the efforts of the cr
 
 
 
-
-
 * Use interfaces and plugin architecture to facilitate swapping out modules and implementations for special use cases
 
 
 
-
-
 * Keep things as simple as possible
-
-
-
-
 
 
 
@@ -59,50 +37,68 @@ This project is coming out of a glaring need that, despite the efforts of the cr
 
 
 
-
-
 Software Layer
 
 
 
-
-
 * Authorization, and Authentication
-	* Following the OAuth Specification
 
 
+
+* Following the OAuth Specification
 
 
 
 * Navigation and Routing, if applicable
-	* No specific guidance
+	* Applications shall implement a home screen, the first screen a user encounters after logging in This screen shall provide.
+		* Access to settings
+		* Dashboard access if applicable
+		* access to search tools
+		* feed if applicable
 
 
 
-
-
-* Support for reading and storing and configuring Environmental variables. See [The Landry Environment Variable Specification (LEVS)](https://github.com/MiLandry/Landry-Enterprise-Specification/blob/main/LEVS/landry-environment-variables-specfification.readme.md)
-
+* No specific guidance
 
 
 
+* Support for reading and storing and configuring Environmental variables. See [The Landry Environment Variable Specification (LEVS)](https://github.com/MiLandry/Landry-Enterprise-Specification/blob/main/LEVS/landry-environment-variables-specfification.readme.md)* Out of the box support for good User Interface and experience
 
-* Out of the box support for good User Interface and experience
-	* Following the specification for Material Design, an opensource set of guidelines for layouts.
-* Declarative and automated support for being able to CReate, Update, and Delete business entities (CRUD)
-	* Specifically, it should use REST as a protocol, following the  [Open Api Specification](https://swagger.io/resources/open-api/) (OAS)
 
-* Declarative approach to forms
-	* Specifically, forms should be generated via the specification created from OAS.
-* Search and query functionality
-	* No Guidance aside from, at a minimum, searching, sorting, and filtering should be supported
+
+* Following the specification for Material Design, an opensource set of guidelines for layouts.* Declarative and automated support for being able to CReate, Update, and Delete business entities (CRUD)* Specifically, it should use REST as a protocol, following the [Open Api Specification](https://swagger.io/resources/open-api/) (OAS)* Declarative approach to forms
+
+
+
+* Specifically, forms should be generated via the specification created from OAS.* Search and query functionality
+
+
+
+* No Guidance aside from, at a minimum, searching, sorting, and filtering should be supported
+
+
+
 * Workflow Engine support or Finite state machine support
-	* No guidance yet, may add later
+
+
+
+* No guidance yet, may add later
+
+
+
 * container ready
-	* No guidance on a specific vendor
+
+
+
+* No guidance on a specific vendor
+
+
 
 * cloud / infra ready
-	* No guidance on specifics
+
+
+
+* No guidance on specifics
 
 
 
@@ -111,29 +107,11 @@ Software Layer
 
 
 
-
-
-* In a means that is 'easy'. No special setup and environmental configuration.
-
-
-
-
-
-* Developer setup is completely automated. The developer only needs to run simple scripts to initialize and start the application.
-
-
-
-
-
-* Hot reloading, instant feedback for changes
-
-
+* In a means that is 'easy'. No special setup and environmental configuration.* Developer setup is completely automated. The developer only needs to run simple scripts to initialize and start the application.* Hot reloading, instant feedback for changes
 
 
 
 * Dependency management
-
-
 
 
 
@@ -142,207 +120,23 @@ Software Layer
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 todo turn this into a website
 
 
 
+<!--****** To avoid retyping too much info. Do a search and replace for the following:*** github_username, repo_name, twitter_handle, email, project_title, project_description
 
 
 
+--><!-- PROJECT SHIELDS --><!--*** I'm using markdown "reference style" links for readability.*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).*** See the bottom of this document for the declaration of the reference variables
 
 
 
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.*** https://www.markdownguide.org/basic-syntax/#reference-style-links
 
 
 
-
-
-
-<!--
-
-
-
-
-
-
-
-***
-
-
-
-
-
-*** To avoid retyping too much info. Do a search and replace for the following:
-
-
-
-
-
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
-
-
-
-
-
--->
-
-
-
-
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-
-
-
-
-
-<!--
-
-
-
-
-
-*** I'm using markdown "reference style" links for readability.
-
-
-
-
-
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-
-
-
-
-
-*** See the bottom of this document for the declaration of the reference variables
-
-
-
-
-
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-
-
-
-
-
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
-
-
-
-
-
--->
-
-
-
-
-
-<!-- [![Contributors][contributors-shield]][contributors-url]
-
-
-
-
-
-[![Forks][forks-shield]][forks-url]
-
-
-
-
-
-[![Stargazers][stars-shield]][stars-url]
-
-
-
-
-
-[![Issues][issues-shield]][issues-url]
-
-
-
-
-
-[![MIT License][license-shield]][license-url]
-
-
-
-
-
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
-
-
-
-
-
-
-
-
-
-<!-- PROJECT LOGO -->
-
-
-
-
-
-<!-- <br />
-
-
-
-
-
-<p align="center">
-
-
-
-
-
-<a href="https://github.com/github_username/repo_name">
-
-
-
-
-
-<img src="images/logo.png" alt="Logo" width="80" height="80">
-
-
-
-
-
-</a>
-
-
-
-
-
-
-
-<h3 align="center">project_title</h3>
-
-
-
-
-
-
-
-<p align="center">
-
-
+--><!-- [![Contributors][contributors-shield]][contributors-url][![Forks][forks-shield]][forks-url][![Stargazers][stars-shield]][stars-url][![Issues][issues-shield]][issues-url][![MIT License][license-shield]][license-url][![LinkedIn][linkedin-shield]][linkedin-url] --><!-- PROJECT LOGO --><!-- <br /><p align="center"><a href="https://github.com/github_username/repo_name"><img src="images/logo.png" alt="Logo" width="80" height="80"></a><h3 align="center">project_title</h3><p align="center">
 
 
 
@@ -350,35 +144,7 @@ project_description
 
 
 
-
-
-<br />
-
-
-
-
-
-<a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-
-
-
-
-
-<br />
-
-
-
-
-
-<br />
-
-
-
-
-
-<a href="https://github.com/github_username/repo_name">View Demo</a>
-
-
+<br  /><a  href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a><br  /><br  /><a  href="https://github.com/github_username/repo_name">View Demo</a>
 
 
 
@@ -386,11 +152,7 @@ project_description
 
 
 
-
-
-<a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-
-
+<a  href="https://github.com/github_username/repo_name/issues">Report Bug</a>
 
 
 
@@ -398,200 +160,9 @@ project_description
 
 
 
+<a  href="https://github.com/github_username/repo_name/issues">Request Feature</a></p></p>-->
 
-
-<a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-
-
-
-
-
-</p>
-
-
-
-
-
-</p>
-
-
-
-
-
--->
-
-
-
-
-
-
-
-
-<!-- TABLE OF CONTENTS -->
-
-
-
-
-
-<!-- <details open="open">
-
-
-
-
-
-<summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-
-
-
-
-
-<ol>
-
-
-
-
-
-<li>
-
-
-
-
-
-<a href="#about-the-project">About The Project</a>
-
-
-
-
-
-<ul>
-
-
-
-
-
-<li><a href="#built-with">Built With</a></li>
-
-
-
-
-
-</ul>
-
-
-
-
-
-</li>
-
-
-
-
-
-<li>
-
-
-
-
-
-<a href="#getting-started">Getting Started</a>
-
-
-
-
-
-<ul>
-
-
-
-
-
-<li><a href="#prerequisites">Prerequisites</a></li>
-
-
-
-
-
-<li><a href="#installation">Installation</a></li>
-
-
-
-
-
-</ul>
-
-
-
-
-
-</li>
-
-
-
-
-
-<li><a href="#usage">Usage</a></li>
-
-
-
-
-
-<li><a href="#roadmap">Roadmap</a></li>
-
-
-
-
-
-<li><a href="#contributing">Contributing</a></li>
-
-
-
-
-
-<li><a href="#license">License</a></li>
-
-
-
-
-
-<li><a href="#contact">Contact</a></li>
-
-
-
-
-
-<li><a href="#acknowledgements">Acknowledgements</a></li>
-
-
-
-
-
-</ol>
-
-
-
-
-
-</details> -->
-
-
-
-
-
-
-
-
-
-<!-- ABOUT THE PROJECT -->
-
-
-
-
-
-<!-- ## About The Project
-
-
-
-
+<!-- TABLE OF CONTENTS --><!-- <details open="open"><summary><h2 style="display: inline-block">Table of Contents</h2></summary><ol><li><a href="#about-the-project">About The Project</a><ul><li><a href="#built-with">Built With</a></li></ul></li><li><a href="#getting-started">Getting Started</a><ul><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#installation">Installation</a></li></ul></li><li><a href="#usage">Usage</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#contributing">Contributing</a></li><li><a href="#license">License</a></li><li><a href="#contact">Contact</a></li><li><a href="#acknowledgements">Acknowledgements</a></li></ol></details> --><!-- ABOUT THE PROJECT --><!-- ## About The Project
 
 
 
@@ -599,100 +170,25 @@ project_description
 
 
 
-
-
-
-
-Here's a blank template to get started:
-
-
-
-
-
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-
-
-
-
-
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
-
-
-
-
-
-
+Here's a blank template to get started:**To avoid retyping too much info. Do a search and replace with your text editor for the following:**`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 ### Built With
 
 
 
-
-
-
-
-* []()
-
-
-
-
-
-* []()
+*  []()* []()* []()<!-- GETTING STARTED -->## Getting Started
 
 
 
 
 
-* []()
+To get a local copy up and running follow these simple steps.### Prerequisites
 
 
 
 
 
-
-
-
-
-<!-- GETTING STARTED -->
-
-
-
-
-
-## Getting Started
-
-
-
-
-
-
-
-To get a local copy up and running follow these simple steps.
-
-
-
-
-
-
-
-### Prerequisites
-
-
-
-
-
-
-
-This is an example of how to list things you need to use the software and how to install them.
-
-
-
-
-
-* npm
-
-
+This is an example of how to list things you need to use the software and how to install them.* npm
 
 
 
@@ -706,27 +202,13 @@ npm install npm@latest -g
 
 
 
-
-
-```
-
-
-
-
-
-
-
-### Installation
-
-
+```### Installation
 
 
 
 
 
 1. Clone the repo
-
-
 
 
 
@@ -740,17 +222,11 @@ git clone https://github.com/github_username/repo_name.git
 
 
 
-
-
 ```
 
 
 
-
-
 2. Install NPM packages
-
-
 
 
 
@@ -764,27 +240,7 @@ npm install
 
 
 
-
-
-```
-
-
-
-
-
-
-
-
-
-<!-- USAGE EXAMPLES -->
-
-
-
-
-
-## Usage
-
-
+```<!-- USAGE EXAMPLES -->## Usage
 
 
 
@@ -794,69 +250,23 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 
 
-
-
-
-
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-
-
-
-
--->
-
+--><!-- ROADMAP --><!-- ## Roadmap
 
 
 
 
 
-
-<!-- ROADMAP -->
-
-
-
-
-
-<!-- ## Roadmap
-
-
-
-
-
-
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues). -->
-
-
-
-
-
-
-
-
-
-<!-- CONTRIBUTING -->
-
-
-
-
-
-<!-- ## Contributing
-
-
+See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues). --><!-- CONTRIBUTING --><!-- ## Contributing
 
 
 
 
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-
-
-
 
 
 
@@ -870,11 +280,7 @@ Contributions are what make the open source community such an amazing place to b
 
 
 
-
-
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-
-
 
 
 
@@ -882,63 +288,17 @@ Contributions are what make the open source community such an amazing place to b
 
 
 
-
-
 5. Open a Pull Request
 
 
 
-
-
-
-
--->
-
+--><!-- LICENSE --><!-- ## License
 
 
 
 
 
-
-<!-- LICENSE -->
-
-
-
-
-
-<!-- ## License
-
-
-
-
-
-
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-
-
-
-
--->
-
-
-
-
-
-
-
-<!-- CONTACT -->
-
-
-
-
-
-<!-- ## Contact
-
-
+Distributed under the MIT License. See `LICENSE` for more information.--><!-- CONTACT --><!-- ## Contact
 
 
 
@@ -950,76 +310,13 @@ Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
 
 
+Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)-->
 
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-
-
--->
+<!-- ACKNOWLEDGEMENTS --><!-- ## Acknowledgements
 
 
 
-
-
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-
-
-
-
-
-<!-- ## Acknowledgements
-
-
-
-
-
-
-
-* []()
-
-
-
-
-
-* []()
-
-
-
-
-
-* []() -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-
-
-
-
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-
-
-
-
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-
-
+* []()* []()* []() --><!-- MARKDOWN LINKS & IMAGES --><!-- https://www.markdownguide.org/basic-syntax/#reference-style-links --><!-- [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
 
 
 
@@ -1027,11 +324,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-
-
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-
-
 
 
 
@@ -1039,11 +332,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-
-
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-
-
 
 
 
@@ -1051,11 +340,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-
-
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-
-
 
 
 
@@ -1063,11 +348,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-
-
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-
-
 
 
 
@@ -1075,11 +356,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-
-
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-
-
 
 
 

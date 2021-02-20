@@ -1,12 +1,8 @@
-
-
 ## Template for tracking implementation status
 
-
-
-
-
 ## Implementation tracking legend
+
+🟦 Not required
 
 🟥 Problem not solved
 
@@ -16,10 +12,6 @@
 
 🟩 Specification implemented
 
-
-
-
-
 ## Implementation status
 
   ## Implementation status
@@ -27,6 +19,11 @@
 Authorization
 Authentication
 Navigation and Routing
+  home screen
+    settings screen
+    dashboard
+    search tools
+    feed
 Environment variables
 UI UX
 CRUD Support
