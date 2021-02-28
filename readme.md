@@ -1,10 +1,22 @@
 ## The Landry Enterprise Specification
 
+The Landry Enterprise Specification provides a list of requirements that must be satisfied by any project in order to **implement 90 to 95 percent of business systems.** "Enterprise ready", in this context, does not refer to a platform of ONLY being capable of accomplishing technical feats such as "supporting http protocol" or "implementing specific data layer specifications", but rather that can...
 
+* let end users create, update, and delete entities through a user interface and persist the entities in a remote data store.
+* Search and retrieve said entities.
+* Execute workflows
 
-This project is coming out of a glaring need that, despite the efforts of the creators of tools and platforms, I have yet to find a platform that, in my opinion, is a general platform for solving the majority of problems facing businesses, IE, being enterprise ready.
+... and implicitely supports all technical requierements to achieve this. In this capacity, "Enterprise ready" also requires minimal friction to the development process.
+
+**Any project that implements the Landry Enterprise Specification trivially supports the three use cases supplied above, and can be copied or reused to support the same three use cases regardless of the business domain**
 
 ## Principles
+
+Software engineers, and all IT professionals for that matter, must take the 'big picture' into context when creating software systems, meaning that systems are created to solve real world problems, that solutions to those problems are convented into specifications, and that engineers implement the specification, and that the implementation is tested to ensured that the problem is handled. **Therefore, the only sensible way to reason about a platform designed for building systems is in terms of its capacity for solving business problems and NOT in terms of its technical capacities.** To this end, the Landry Enterprise Specification intentionally omits certain features, such as whether Object Oriented Features are supported, or how it compiles its code.
+
+Instead, the Landry Enterprise Specification justifies its requirements through a business-driven set of principles, meaning that solutions oriented torwards use cases are favored over technical imperatives, and that quality, frugality, and efficiency are first class concerns.
+
+To that end the following principles are presented:
 
 
 * Provide out-of-the-box solutions to common recurring engineering challenges
@@ -17,11 +29,29 @@ This project is coming out of a glaring need that, despite the efforts of the cr
 
 * Keep things as simple as possible
 
-## A list of specifications that every project must solve to implement the LES
+
+## Justifications
+
+The reader may find the following reference implementation as working proof of its capacity :
+[React front end](https://github.com/MiLandry/cat-wrangler-react)
+[Node back end](https://github.com/MiLandry/cat-wrangler-api)
+
+The requirements laid out in the Landry Enterprise Specification are a work in progress. In its current state, these requirements were found to be successful, if not inevitably complete nor the absolutely optimized requirement. As the intention of this document is to support projects in delivering results to stakeholders, it also maintains the following about the requirements.
+
+* A requirement explicitely or implicitely identifies a technical or business problem, and then proposes a specific solution as focused as possible to provide the best solution, but no more specific than that.
+
+* Projects should focus on delivering results to the business over 100% implementation of the Landry Enterprise Specification, meaning that alternative solutions to given problems may be more appropriate for a given timeline.
+
+* Not every project should need to tackle every problem in the Landry Enterprise Specification.
+
+As such, a template is provided that projects can use to track requirement process:
+
+[Template ](https://github.com/MiLandry/Landry-Enterprise-Specification/blob/main/implementationtemplate.md)
+
+## The Landry Enterprise Specification requirements
 
 
-
-Software Layer
+### Software Layer
 
 * Authorization, and Authentication
   * Applications shall implement OAuth2 and OpenID Connect for Authorization Authentication
@@ -71,9 +101,9 @@ Software Layer
 
 * No guidance on specifics
 
-## Mindful of developmental processes
+### Tooling
 
-* In a means that is 'easy'. No special setup and environmental configuration.* Developer setup is completely automated. The developer only needs to run simple scripts to initialize and start the application.* Hot reloading, instant feedback for changes
+* Automated setup and build, minimal or no environmental dependencies required.
 
 * Dependency management
 
@@ -88,3 +118,16 @@ Software Layer
 * Testing Library
 
   * Mocking
+
+
+
+
+
+## License
+MIT
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
