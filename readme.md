@@ -1,10 +1,10 @@
 ## The Landry Enterprise Specification
 
-The Landry Enterprise Specification provides a list of requirements that must be satisfied by any project in order to **implement 90 to 95 percent of business systems.** "Enterprise ready", in this context, does not refer to a platform of ONLY being capable of accomplishing technical feats such as "supporting http protocol" or "implementing specific data layer specifications", but rather that can...
+The Landry Enterprise Specification provides a list of requirements that must be satisfied by any project in order to **implement 90 to 95 percent of business systems use cases.** "Enterprise ready", in this context, does not refer to a platform of ONLY being capable of accomplishing technical feats such as "supporting http protocol" or "implementing specific data layer specifications", but can...
 
 * let end users create, update, and delete entities through a user interface and persist the entities in a remote data store.
-* Search and retrieve said entities.
-* Execute workflows
+* search and retrieve said entities.
+* execute workflows
 
 ... and implicitely supports all technical requierements to achieve this. In this capacity, "Enterprise ready" also requires minimal friction to the development process.
 
@@ -19,7 +19,7 @@ Instead, the Landry Enterprise Specification justifies its requirements through 
 To that end the following principles are presented:
 
 
-* Provide out-of-the-box solutions to common recurring engineering challenges
+* Solve business problemns instead of technical problems. Therefore, platforms must provide out-of-the-box solutions to common recurring engineering challenges.
 
 * Leverage open source libraries whenever possible
 
@@ -33,12 +33,12 @@ To that end the following principles are presented:
 ## Justifications
 
 The reader may find the following reference implementation as working proof of its capacity :
-[React front end](https://github.com/MiLandry/cat-wrangler-react)
-[Node back end](https://github.com/MiLandry/cat-wrangler-api)
+[React front end](https://github.com/MiLandry/cat-wrangler-react)\
+[Node back end](https://github.com/MiLandry/cat-wrangler-api)\
 
 The requirements laid out in the Landry Enterprise Specification are a work in progress. In its current state, these requirements were found to be successful, if not inevitably complete nor the absolutely optimized requirement. As the intention of this document is to support projects in delivering results to stakeholders, it also maintains the following about the requirements.
 
-* A requirement explicitely or implicitely identifies a technical or business problem, and then proposes a specific solution as focused as possible to provide the best solution, but no more specific than that.
+* A requirement explicitely or implicitely identifies a technical or business problem, and then proposes a specific solution as specific as possible to provide the best solution, but no more specific than that.
 
 * Projects should focus on delivering results to the business over 100% implementation of the Landry Enterprise Specification, meaning that alternative solutions to given problems may be more appropriate for a given timeline.
 
