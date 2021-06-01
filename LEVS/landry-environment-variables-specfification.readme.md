@@ -15,6 +15,8 @@
 
 3. Engineers can check in env keys and default values into version control.
 
+4. sensitive information, such as production API keys, remain private, and not checked into version control.
+
 
 
 ## Specification
@@ -34,6 +36,8 @@
 6. If that doesn't exist, then the value specified in the `env.default.yaml` file.
 
 7. The `env.default.yaml` shall be checked into version control. Other env.*.yaml files shall be barred from version control
+
+8. At runtime, any environmental values set by the OS can override the environment values set by file configuration.
 
 
 ## Implementation suggestions
