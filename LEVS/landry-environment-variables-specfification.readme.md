@@ -1,13 +1,11 @@
+TODO maybe a better plan is to do a POC with https://www.npmjs.com/package/dotenv that satisfies all of these goals.
 
-## The Landry Environmental Variable Specification
+precendence: commandline vars > Environment vars > .env files 
 
 
-
-
+# The Landry Environmental Variable Specification
 
 ## Goals
-
-
 
 1. The Application can read env variables on the node and persist them to keys when the application starts
 
@@ -21,9 +19,8 @@
 
 ## Specification
 
-
-
-1. The application shall reference a reserved env var, `ENVIRONMENT`, to determine its logical environment, which defaults to `default` if it is not set or is an empty string.
+1. Any library or application that implementation shall produce and API that exposes a , 
+2. The application shall reference a reserved env var, `ENVIRONMENT`, to determine its logical environment, which defaults to `default` if it is not set or is an empty string.
 
 2. The application shall scan a file located in the root of the project, called `env.default.yaml` to determine the list of keys that the application shall populate
 
